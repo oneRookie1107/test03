@@ -11,7 +11,7 @@ from selenium import webdriver
 # driver.get('https://k12.gzhtedu.cn/#/login')
 print('自动化用例啦')
 def test_git():
-    print('测试呢')
+    print('测试呢啥玩意改名字啦')
     assert True
 # time.sleep(5)
 # driver.quit()
