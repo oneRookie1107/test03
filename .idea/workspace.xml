@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2f32ab6-a33b-4883-bac3-5f9e38b62ed8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_003_updstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_003_updstudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_004_delstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_004_delstudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_006_paging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_006_paging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/tr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/tr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="f2f32ab6-a33b-4883-bac3-5f9e38b62ed8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
