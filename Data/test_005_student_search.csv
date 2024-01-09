@@ -1,0 +1,8 @@
+username,sex,is_add,status,level,message
+肥肥,男,1,1,,
+瘦瘦,女,1,1,L1,
+瘦瘦,,0,1,L1,
+,女,0,1,L1,
+肥肥,男,0,1,L1,
+肥肥,女,0,0,L1,
+

@@ -1,0 +1,9 @@
+websites:
+  host: https://k12.gzhtedu.cn
+user:
+  username: sjqxxx9999
+  pwd: abc@123456
+url:
+  student_list_url1: /timemeow/#/bureauSchoolMange/schoolManage/studentManage?branchId=687007746105257985&gradeId=687010485765255169&classId=687020304879038464&orgId=687007744616280064&gradeClassName=%E4%B8%80%E5%B9%B4%E7%BA%A74%E7%8F%AD&isGraduate=0
+  login_url: /#/login
+  student_list_url: /#/bureauSchoolMange/schoolManage/studentManage?branchId=688838369647562752&gradeId=775417402929242112&classId=775417404158115841&orgId=688838369102303232&gradeClassName=小班1班&isGraduate=0
