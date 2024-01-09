@@ -3,9 +3,10 @@ from selenium import webdriver
 from Test.PageObject.login_page import *
 from Common.parse_csv import parser_csv
 from Common.parse_yml import parser_yml
+import os
 # param=[['cszoaxx0000','abc@12345',0,''],['cszoaxx0000','abc@123456',1,'测试组OA学校']]
-param=parser_csv('D:/pythondir/uoframework/Data/test_001_login.csv')
-host=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','websites','host')
+param=parser_csv(os.path.join(os.getcwd(),'Data/test_001_login.csv'))
+host=parser_yml(os.path.join(os.getcwd(),'Config/redmine.yml'),'websites','host')
 homeurl=host+'/ztoe/index.html#/login'
 def asserttips(x):
     return '用户或密码不正确' in x.page_source

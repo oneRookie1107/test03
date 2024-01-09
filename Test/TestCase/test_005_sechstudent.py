@@ -6,9 +6,12 @@ from Test.PageObject.addstudent_page import Addstudent_Scenario
 from Test.PageObject.studentlist_page import StudentListScenario, StudentListPer, StudentDeletePer
 from Config.save_driver_object import DriverObject
 from Common.parse_csv import parser_csv
-add_data=parser_csv(r'D:\pythondir\uoframework\Data\test_005_student_search.csv',is_dict=1,is_add=1)
-search_data=parser_csv(r'D:\pythondir\uoframework\Data\test_005_student_search.csv',is_dict=0,is_add=0)
-student_list_url=r'https://k12.gzhtedu.cn/#/bureauSchoolMange/schoolManage/studentManage?branchId=688838369647562752&gradeId=775417402929242112&classId=775417404158115842&orgId=688838369102303232&gradeClassName=%E5%B0%8F%E7%8F%AD2%E7%8F%AD&isGraduate=0'
+from Common.parse_yml import parser_yml
+import os
+add_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_005_student_search.csv'),is_dict=1,is_add=1)
+search_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_005_student_search.csv'),is_dict=0,is_add=0)
+host=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'websites','host')
+student_list_url=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
 class TestStudentSearch():
     def setup_class(self):
         self.driver=DriverObject.driver

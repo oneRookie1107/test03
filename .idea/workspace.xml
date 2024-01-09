@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2f32ab6-a33b-4883-bac3-5f9e38b62ed8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_003_updstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_003_updstudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_004_delstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_004_delstudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_006_paging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_006_paging.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestCase/tr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/tr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.tr">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="uoframework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +161,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.tr" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.test_006_paging" />
         <item itemvalue="Python.test_005_sechstudent" />
         <item itemvalue="Python.parse_csv" />
@@ -171,7 +177,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

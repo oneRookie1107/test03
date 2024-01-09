@@ -8,12 +8,12 @@ from Test.PageObject.addstudent_page import AddstudentOper,Addstudent_Scenario,A
 from Common.parse_csv import parser_csv
 from Common.parse_yml import parser_yml
 from Test.PageObject.studentlist_page import StudentListScenario, StudentListPer, StudentDeletePer
-
-add_data=parser_csv(r'D:\pythondir\uoframework\Data\test_003_updstudent.csv',is_dict=1,is_add=1)
-upd_data=parser_csv(r'D:\pythondir\uoframework\Data\test_003_updstudent.csv',is_dict=0,is_add=0)
-delet_data=parser_csv(r'D:\pythondir\uoframework\Data\test_003_updstudent.csv',is_dict=1)
-host=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','websites','host')
-add_url=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','url','student_list_url')
+import os
+add_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_003_updstudent.csv'),is_dict=1,is_add=1)
+upd_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_003_updstudent.csv'),is_dict=0,is_add=0)
+delet_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_003_updstudent.csv'),is_dict=1)
+host=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'websites','host')
+add_url=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
 addurl=host+add_url
 class TestUpdstudent():
     def setup_class(self):

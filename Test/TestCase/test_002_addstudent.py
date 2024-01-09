@@ -1,3 +1,4 @@
+import os
 import time
 
 import pytest
@@ -12,10 +13,10 @@ from Common.parse_csv import parser_csv
 from Config.save_driver_object import DriverObject
 from Test.PageObject.studentlist_page import StudentListScenario, StudentListPer,StudentDeletePer
 
-host=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','websites','host')
-add_url=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','url','student_list_url')
+host=parser_yml(os.path.join(os.getcwd(),'Config/redmine.yml'),'websites','host')
+add_url=parser_yml(os.path.join(os.getcwd(),'Config/redmine.yml'),'url','student_list_url')
 addurl=host+add_url
-params=parser_csv(r'D:\pythondir\uoframework\Data\test_002_addstudent.csv')
+params=parser_csv(os.path.join(os.getcwd(),r'Data\test_002_addstudent.csv'))
 @pytest.mark.parametrize('username,sex,code,phone,fimaly,status,message',params)
 class TestAddStudnt():
     def setup_class(self):

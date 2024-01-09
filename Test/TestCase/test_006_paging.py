@@ -2,12 +2,12 @@ import time
 
 
 import pytest
-
+import os
 from Config.save_driver_object import DriverObject
 from Test.PageObject.studentlist_page import StudentListPer
 from Common.parse_yml import parser_yml
-host=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','websites','host')
-add_url=parser_yml('D:/pythondir/uoframework/Config/redmine.yml','url','student_list_url')
+host=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'websites','host')
+add_url=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
 student_list=host+add_url
 class TestPaging():
     def setup_class(self):

@@ -1,4 +1,4 @@
 import pytest
 
 if __name__=='__main__':
-    pytest.main(['-vs','--collect-only'])
+    pytest.main(['-vs'])
