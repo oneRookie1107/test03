@@ -10,15 +10,23 @@ def parser_csv(file_path,is_dict=0,**kwargs):
         fs=csv.DictReader(f)
         result=[]
         for values in fs:
+            values=dict(values)
             is_fiflter=1
+            #过滤数据
             for key,valu in kwargs.items():
-                if values.get(key) is None or values.get(key)!=str(valu):
+                if values.get(key) is None or str(values.get(key))!=str(valu):
                     is_fiflter=0
                     break
+            #将数据里的非字符串转成python中数据
+            for key,value in values.items():
+                try:
+                    values[key]=eval(value)
+                except Exception as e:
+                    pass
+            #根据入参返回不同数据格式
             if is_fiflter and is_dict:
-                result.append(dict(values))
+                result.append(values)
             elif is_fiflter and is_dict==0:
                 result.append(list(values.values()))
         return result
-# print(parser_csv(r'D:\pythondir\uoframework\Data\test_003_updstudent.csv'))
-
+# print(parser_csv(r'D:\pythondir\uoframework\Data\test_003_updstudent.csv',is_dict=1))

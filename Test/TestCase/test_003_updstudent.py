@@ -23,8 +23,9 @@ class TestUpdstudent():
         self.student_list_scena=StudentListScenario(self.driver)
         self.exist=AddExistOper(self.driver)
         self.driver.get(addurl)
+        self.driver.refresh()#刷新下避免上一个用例影响
         for student in add_data:
-            print('添加学生啦')
+            print(add_data)
             Addstudent_Scenario(self.driver).addstudent(student.get('username'))
             time.sleep(1)
             self.driver.refresh()
@@ -52,7 +53,7 @@ class TestUpdstudent():
         self.student_list_per.click_update()
         self.update_per.enter_username(new_name)
         self.update_per.click_submit()
-        if status=='1':
+        if status==1:
             assert WebDriverWait(self.driver,5).until(lambda x:message in x.page_source)
         else:
             assert message in self.exist.get_title_content()

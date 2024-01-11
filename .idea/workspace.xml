@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f2f32ab6-a33b-4883-bac3-5f9e38b62ed8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/parse_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/parse_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/redmine.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/redmine.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/est_001_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestCase/test_003_updstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_003_updstudent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestCase/test_004_delstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_004_delstudent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/test_006_paging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/test_006_paging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestCase/tr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestCase/tr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tr">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="uoframework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,7 +96,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_005_sechstudent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_002_addstudent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="uoframework" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,7 +108,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestCase/test_005_sechstudent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestCase/test_002_addstudent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tr" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test_006_paging" />
-        <item itemvalue="Python.test_005_sechstudent" />
         <item itemvalue="Python.parse_csv" />
+        <item itemvalue="Python.test_002_addstudent" />
+        <item itemvalue="Python.tr" />
+        <item itemvalue="Python.test_006_paging" />
       </list>
     </recent_temporary>
   </component>

@@ -11,7 +11,8 @@ import os
 add_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_005_student_search.csv'),is_dict=1,is_add=1)
 search_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_005_student_search.csv'),is_dict=0,is_add=0)
 host=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'websites','host')
-student_list_url=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
+student_list=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
+student_list_url=host+student_list
 class TestStudentSearch():
     def setup_class(self):
         self.driver=DriverObject.driver
@@ -19,6 +20,7 @@ class TestStudentSearch():
         self.student_list_scenario=StudentListScenario(self.driver)
         self.student_list_per=StudentListPer(self.driver)
         self.driver.get(student_list_url)
+        self.driver.refresh()#刷新下避免上一个用例影响
         for student in add_data:
             Addstudent_Scenario(self.driver).addstudent(student.get('username'),student.get('sex'))
             time.sleep(1)
@@ -39,7 +41,7 @@ class TestStudentSearch():
     def test_student_search(self,username,sex,is_add,status,level,message):
         self.student_list_scenario.seartch(username,sex)
         print('搜成功没',username,sex)
-        if status=='1':
+        if status==1:
             if username:
                 assert username in self.student_list_per.get_data_stuname()
             if sex:

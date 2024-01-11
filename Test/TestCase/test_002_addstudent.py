@@ -44,7 +44,7 @@ class TestAddStudnt():
         self.driver.refresh()#刷新下防止受上一个用例的影响（比如上一个失败了弹窗还在的话不刷新就会影响下一个用例）
         #登录账号
         Addstudent_Scenario(self.driver).addstudent(username,sex,code,phone,fimaly)
-        if status=='1':
+        if status==1:
             assert WebDriverWait(self.driver,5).until(lambda x:message in x.page_source)
         else:
             assert self.add_exist_oper.get_title_content()==message

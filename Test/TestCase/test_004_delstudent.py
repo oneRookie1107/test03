@@ -12,7 +12,7 @@ import os
 add_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_004_delstudent.csv'),is_dict=1,is_add=1)
 del_data=parser_csv(os.path.join(os.getcwd(),r'Data\test_004_delstudent.csv'),is_dict=0,is_add=0)
 host=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'websites','host')
-student_list_url=parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
+student_list_url=host+parser_yml(os.path.join(os.getcwd(),r'Config/redmine.yml'),'url','student_list_url')
 class TestdelStudent():
     def setup_class(self):
         self.driver=DriverObject.driver
@@ -20,9 +20,11 @@ class TestdelStudent():
         self.student_del_per=StudentDeletePer(self.driver)
         self.student_list_scenario=StudentListScenario(self.driver)
         self.driver.get(student_list_url)
+        self.driver.refresh()#刷新下避免上一个用例影响
         for student in add_data:
             Addstudent_Scenario(self.driver).addstudent(student.get('username'))
-        time.sleep(1)
+            time.sleep(1)
+            self.driver.refresh()
     @pytest.mark.parametrize('username,message,is_add,status,button',del_data)
     def test_del_student(self,username,message,is_add,status,button):
         self.driver.refresh()
@@ -34,7 +36,7 @@ class TestdelStudent():
             self.student_del_per.click_delete_x()
         else:
             self.student_del_per.click_delete_determine()
-        if status=='1':
+        if status==1:
             assert WebDriverWait(self.driver,3).until(lambda x:message in x.page_source)
         assert WebDriverWait(self.driver,2).until(lambda x:self.student_del_per.get_del_pop().is_displayed()==False)
 # if __name__=='__main__':
